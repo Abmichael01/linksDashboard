@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a  class="add-butt">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Add Link</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <span>Edit Links Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>Preview Links Profile</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search"/>
+                </div>
+                <img src="./images/img.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="card--container">
+            <h3 class="main--title">Today's data</h3>
+            <div class="card--wrapper">
+                <div class="stats--card light-red">
+                    <h3 class="card--header">Profile Visits</h3>
+                    <span class="card--stat">26</span>
+                </div>
+
+                <div class="stats--card light-purple">
+                    <h3 class="card--header">Links Clicked</h3>
+                    <span class="card--stat">40</span>
+                </div>
+
+                <div class="stats--card light-green">
+                    <h3 class="card--header">Links Copied</h3>
+                    <span class="card--stat">10</span>
+                </div>
+
+                <div class="stats--card light-blue">
+                    <h3 class="card--header">View all stats</h3>
+                    <a href="#" class="view--stat">
+                        <i class="fa-solid fa-arrow-right" ></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tabular--wrapper">
+            <h3 class="main--title">My Links</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Link</th>
+                            <th>Status</th>
+                            <th>Clicks</th>
+                            <th>Copies</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Facebook Profile</td>
+                            <td>Active</td>
+                            <td>43</td>
+                            <td>10</td>
+                            <td class="links-action-cont">
+                                <a href="" class="links-action"><i class="fa-regular fa-pen-to-square"></i></a> 
+                                <a href="" class="links-action"><i class="fa-solid fa-trash"></i></a> 
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Facebook Profile</td>
+                            <td>Not Active</td>
+                            <td>43</td>
+                            <td>10</td>
+                            <td class="links-action-cont">
+                                <a href="" class="links-action"><i class="fa-regular fa-pen-to-square"></i></a> 
+                                <a href="" class="links-action"><i class="fa-solid fa-trash"></i></a> 
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Facebook Profile</td>
+                            <td>Active</td>
+                            <td>43</td>
+                            <td>10</td>
+                            <td class="links-action-cont">
+                                <a href="" class="links-action"><i class="fa-regular fa-pen-to-square"></i></a> 
+                                <a href="" class="links-action"><i class="fa-solid fa-trash"></i></a> 
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Facebook Profile</td>
+                            <td>Not Active</td>
+                            <td>43</td>
+                            <td>10</td>
+                            <td class="links-action-cont">
+                                <a href="" class="links-action"><i class="fa-regular fa-pen-to-square"></i></a> 
+                                <a href="" class="links-action"><i class="fa-solid fa-trash"></i></a> 
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Facebook Profile</td>
+                            <td>Active</td>
+                            <td>43</td>
+                            <td>10</td>
+                            <td class="links-action-cont">
+                                <a href="" class="links-action"><i class="fa-regular fa-pen-to-square"></i></a> 
+                                <a href="" class="links-action"><i class="fa-solid fa-trash"></i></a> 
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td colspan="7">Total: $100</td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="add-link-cont">
+            <h4>Add a new link</h4>
+            <form action="">
+                <div class="input-cont">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <input type="text" placeholder="Link name">
+                </div>
+                <div class="input-cont">
+                    <i class="fa-solid fa-link"></i>
+                    <input type="text" placeholder="Link">
+                </div>
+                <input type="submit" value="Add link" class="add">
+            </form>
+            <div class="close"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
